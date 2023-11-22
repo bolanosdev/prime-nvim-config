@@ -1,2 +1,2 @@
-print("hello from cbolanos")
+require("cbolanos.set")
 require("cbolanos.remap")
