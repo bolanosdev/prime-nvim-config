@@ -6,6 +6,7 @@ lsp.ensure_installed({
   'tsserver',
   'eslint', 
   'rust_analyzer',
+  'kotlin_language_server'
 })
 
 -- Fix Undefined global 'vim'
@@ -56,6 +57,9 @@ lsp.on_attach(function(client, bufnr)
 end)
 
 lsp.setup()
+require('ufo').setup()
+
+
 
 vim.diagnostic.config({
     virtual_text = true

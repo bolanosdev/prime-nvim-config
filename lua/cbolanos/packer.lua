@@ -30,6 +30,9 @@ return require('packer').startup(function(use)
   use("theprimeagen/harpoon")
   use("mbbill/undotree")
   use("tpope/vim-fugitive")
+  use("preservim/nerdcommenter")
+  use {'kevinhwang91/nvim-ufo', requires = 'kevinhwang91/promise-async'}
+  use('mfussenegger/nvim-dap')
 
   use {
 	  'VonHeikemen/lsp-zero.nvim',
